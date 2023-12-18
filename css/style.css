@@ -1,0 +1,415 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: "Lato", sans-serif;
+  height: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 40px;
+}
+
+nav {
+  margin: 30px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: 200px;
+  height: 39px;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul li {
+  padding: 0 20px;
+  color: #1d2c3c;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+
+nav ul li.account {
+  border-radius: 6px;
+  border: 2px solid #646e7a;
+  padding: 10px 20px;
+}
+
+hr {
+  background: #e0e6ea;
+  width: 100%;
+}
+
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.checkout {
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.05),
+    0px 15px 35px 0px rgba(43, 64, 78, 0.1);
+}
+
+.grid {
+  display: grid;
+  gap: 0;
+  grid-template-columns: 2fr 1fr;
+}
+
+.left {
+  padding: 41px 48px;
+}
+
+.left h1 {
+  color: #1d2c3c;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-family: "Lato", sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.left hr {
+  width: 580px;
+  height: 2px;
+  background: #f5f7fa;
+  margin: 2rem 0 1.5rem 0;
+}
+
+.left .title {
+  position: relative;
+}
+
+.left img {
+  display: inline;
+}
+
+.left h2 {
+  color: #1d2c3c;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.16px;
+  display: inline;
+  margin-left: 1rem;
+  position: absolute;
+  top: 15%;
+}
+
+.left h3 {
+  display: inline;
+  color: #548bc5;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.142px;
+  position: absolute;
+  top: 17.5%;
+  right: 35rem;
+}
+
+.form {
+  margin-top: 0.5rem;
+}
+
+.form.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.form.grid > *:last-child {
+  grid-column: 1 / span 2;
+  width: 70%;
+}
+
+.form-group .card-details {
+  display: flex;
+  position: absolute;
+  bottom: -5%;
+  right: 42%;
+}
+
+.form-group .card-details h6 {
+  color: #646e7a;
+  text-align: right;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-left: 1rem;
+}
+
+label {
+  color: #1d2c3c;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+input {
+  width: 100%;
+  border-radius: 4px;
+  background: #edeff2;
+  border: 1px solid #edeff2;
+  padding: 10px 20px;
+  height: 36px;
+  margin-top: 0.5rem;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1179bf;
+}
+
+::placeholder {
+  color: #646e7a;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+button {
+  border-radius: 5px;
+  background: #038e7d;
+  height: 52px;
+  width: 100%;
+  margin-top: 2rem;
+  border: 1px solid #038e7d;
+  color: #fff;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.396px;
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid #038e7d;
+  background-color: #fff;
+  color: #038e7d;
+}
+
+.support {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  color: #646e7a;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+
+.support strong {
+  color: #1d2c3c;
+  font-weight: 700;
+}
+
+.support img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.support span {
+  margin-left: 1rem;
+}
+
+.stripe {
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.stripe img {
+  width: 92px;
+  height: 20.101px;
+}
+
+.right {
+  border-radius: 0px 6px 6px 0px;
+  background: #1179bf;
+  padding: 44px 48px;
+}
+
+.right h1 {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.01px;
+}
+
+.right h2 {
+  color: #fff;
+  font-family: "Lato";
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.015px;
+}
+
+.right h2 sup {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.right h2 sub {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.right h3 {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.008px;
+  margin-top: 1rem;
+}
+
+.right ul {
+  margin-top: 2rem;
+}
+
+.right ul li {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.008px;
+  list-style-type: none;
+  display: flex;
+  padding: 10px 0;
+}
+
+.right ul li strong {
+  padding: 0 5px;
+}
+
+.right ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 0.5rem;
+}
+
+.right h4 {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.008px;
+  margin-top: 2rem;
+  line-height: 2rem;
+}
+
+.right h4 span {
+  font-style: italic;
+  margin-right: 2px;
+}
+
+.right hr {
+  margin: 2rem 0;
+  width: 224px;
+  height: 2px;
+  opacity: 0.2005;
+  background: #fff;
+}
+
+.right h5 {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.009px;
+}
+
+.right .customer {
+  margin-top: 2rem;
+}
+
+.right .customer img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+.right .customer h4 {
+  color: #fff;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.008px;
+  display: inline;
+  bottom: -38.5%;
+  position: absolute;
+}
+
+footer {
+  margin: 2rem 0 6rem 0;
+  color: #636b6f;
+  text-align: center;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+footer span {
+  color: #31708f;
+}
